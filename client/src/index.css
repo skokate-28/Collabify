@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Sora:wght@100..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-darkBg text-gray-200 font-dmsans antialiased selection:bg-indigoAccent selection:text-white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sora text-white tracking-tight;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0D0E11;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2D35;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6366F1;
+}
+
+/* Markdown editor customization for dark theme */
+.w-md-editor {
+  background-color: #16181D !important;
+  border: 1px solid #2A2D35 !important;
+  color: #E2E8F0 !important;
+}
+.w-md-editor-toolbar {
+  background-color: #1E2028 !important;
+  border-bottom: 1px solid #2A2D35 !important;
+  color: #E2E8F0 !important;
+}
+.w-md-editor-content {
+  background-color: #16181D !important;
+}
+.w-md-editor-preview {
+  background-color: #16181D !important;
+  color: #E2E8F0 !important;
+}
+.wmde-markdown-var {
+  background-color: transparent !important;
+}
