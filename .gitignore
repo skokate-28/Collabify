@@ -1,0 +1,38 @@
+# Dependencies installed by npm in the client and server applications
+node_modules/
+
+# Vite and other build output
+dist/
+dist-ssr/
+coverage/
+.vite/
+
+# Local environment files and secret-bearing configuration
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.sample
+
+# Logs and local tool caches
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.eslintcache
+
+# Local certificates, signing keys, and OS metadata
+*.pem
+*.key
+*.p12
+*.pfx
+.DS_Store
+Thumbs.db
+
+# IDE and editor state
+.idea/
+/.vscode/
+*.swp
+*.swo
